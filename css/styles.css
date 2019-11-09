@@ -1,0 +1,106 @@
+body {
+    background-color:#000000;
+}
+a{text-decoration: none}
+ul{
+    margin:0;
+    padding: 0;
+    list-style: none;
+}
+/* menu main*/
+.side{
+    opacity: 0;
+    display: none;
+    left: -999em;
+    width: 200px;
+}
+.menu a{
+    background: #ff9900;
+    color: #fff;
+    padding: 10px;
+    display: block;
+    transform: skew(20deg);
+    border-bottom: 1px solid #666;
+    transition: 0.4s all;
+}
+.menu a:hover{
+    background:gray;
+    padding: 10px 0 10px 30px;
+}
+/*menu float*/
+.menu_list{
+    position: relative;
+}
+.menu_drop{
+    position: absolute;
+    width:100%;
+    left: 100%;
+    top: -9999em;
+    opacity: 0;
+    border-left: 4px solid transparent;
+    transition: 0.4s opacity;
+}
+.menu_list:hover .menu_drop{
+    top:0;
+    opacity: 1;
+}
+.start_button{
+    position: absolute;
+    background-color: orange;
+    width:200px;
+    height:200px;
+    left: 50%;
+    top: 50%;
+    margin-left: -100px;
+    margin-top: -100px;
+    border-radius: 100%;
+}
+#start_button{
+    position: absolute;
+    color: aliceblue;
+    z-index: 100;
+    font-size: 2.5em;
+    left:30px;
+    top:40px;
+    width:80%;
+}
+.start{
+    position: absolute;
+    background-color: orange;
+    width:170px;
+    height:170px;
+    left: 50%;
+    top: 50%;
+    margin-left: -85px;
+    margin-top: -85px;
+    border-radius: 100%;
+    font-size: 2.5em;
+    border-color: cadetblue;
+}
+.initialize{
+    background-color: cyan;
+    transform: scale(0);
+    transition: transform 200ms linear;
+    will-change: transform;
+
+}
+.paint{
+    opacity:0;
+    background-image: url("/sources/790278-download-free-hex-grid-wallpaper-1920x1080.jpg");
+    opacity: 1;
+    transition: 400ms opacity;
+}
+
+.enable{
+    visibility: visible;
+    display: block;
+    opacity: 1;
+    transition: opacity 2s;
+}
+
+.menu{
+    font-size:1.5em;
+
+}
+
+

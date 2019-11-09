@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <title>First project</title>
+</head>
+<body>
+<div class="wrapper">
+    <div class="curtain">
+    </div>
+    <div class="side">
+        <ul class="menu">
+            <li class="menu_list"><a href="#">SORTS</a>
+                <ul class="menu_drop">
+                    <li><a href="fourth_page.html">BUBBLE</a></li>
+                    <li><a href="#">Подпункт 2</a></li>
+                    <li><a href="#">Подпункт 3</a></li>
+                    <li><a href="#">Подпункт 4</a></li>
+                    <li><a href="#">Подпункт 5</a></li>
+                    </li>
+                </ul>
+            <li class="menu_list"><a href="#">GAMES</a>
+                <ul class="menu_drop">
+                    <li><a href="second_page.html">REACTION</a></li>
+                    <li><a href="third_page.html">PONG</a></li>
+                    <li><a href="#">Подпункт 3</a></li>
+                    <li><a href="#">Подпункт 4</a></li>
+                    <li><a href="#">Подпункт 5</a></li>
+                    </li>
+                </ul>
+            <li class="menu_list"><a href="#">Пункт 3</a>
+                <ul class="menu_drop">
+                    <li><a href="#">Подпункт 1</a></li>
+                    <li><a href="#">Подпункт 2</a></li>
+                    <li><a href="#">Подпункт 3</a></li>
+                    <li><a href="#">Подпункт 4</a></li>
+                    <li><a href="#">Подпункт 5</a></li>
+                    </li>
+                </ul>
+            <li class="menu_list"><a href="#">Пункт 4</a>
+                <ul class="menu_drop">
+                    <li><a href="#">Подпункт 1</a></li>
+                    <li><a href="#">Подпункт 2</a></li>
+                    <li><a href="#">Подпункт 3</a></li>
+                    <li><a href="#">Подпункт 4</a></li>
+                    <li><a href="#">Подпункт 5</a></li>
+                    </li>
+                </ul>
+            <li class="menu_list"><a href="#">Пункт 5</a>
+                <ul class="menu_drop">
+                    <li><a href="#">Подпункт 1</a></li>
+                    <li><a href="#">Подпункт 2</a></li>
+                    <li><a href="#">Подпункт 3</a></li>
+                    <li><a href="#">Подпункт 4</a></li>
+                    <li><a href="#">Подпункт 5</a></li>
+                    </li>
+                </ul>
+        </ul>
+    </div>
+    <div class="start_button">
+        <input class="start" type="button" value="START"
+               onclick="document.querySelector('.start_button').classList.add('initialize'),
+               document.querySelector('body').classList.add('paint'),
+               document.querySelector('.side').classList.add('enable')">
+    </div>
+</div>
+</body>
+</html>
