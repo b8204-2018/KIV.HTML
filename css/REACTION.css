@@ -1,3 +1,7 @@
 body{
-    background-image: url("/sources/arseniy-chebynkin-virtual-city.jpg");
+    background-image: url("../sorces/arseniy-chebynkin-virtual-city.jpg");
+}
+
+.teks{
+    length:50px;
 }

@@ -1,0 +1,106 @@
+* {margin: 0; padding: 0;}
+canvas{
+    position: absolute;
+}
+
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+html {
+    box-sizing: border-box;
+    min-height: 100vh;
+    font-size: 10px;
+}
+body {
+    display: flex;
+    background-image: url("/sorces/tv.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    font-family: 'Amatic SC';
+    background-color: black;
+
+}
+
+.start{
+    background-color: lime;
+    background-image: url("/sorces/Play-Button-PNG-Image.png");
+    background-size: cover;
+    position: inherit;
+    left:153rem;
+    top:23rem;
+    height: 17rem;
+    width: 17rem;
+    border-radius: 50%;
+    color: blue;
+    border: 1px solid red;
+}
+
+
+.score {
+    position: inherit;
+    left:153rem;
+    top:5rem;
+    height: 10rem;
+    width: 17rem;
+    font-size: 9rem;
+    text-position: inherit;
+    padding: 0 3rem;
+    color:#0F0 ;
+    background-color:black ;
+    border-radius: 1rem;
+}
+
+.game {
+    position: inherit;
+    top:20rem;
+    left:50rem;
+    width: 600px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hole {
+    flex: 1 0 33.33%;
+    overflow: hidden;
+    position: relative;
+}
+
+.hole:after {
+    display: block;
+    background: url("/sorces/dirt.svg") bottom center no-repeat;
+    background-size: contain;
+    content: '';
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    z-index: 2;
+    bottom: -30px;
+}
+
+.mole {
+    background: url("/sorces/mole.svg") bottom center no-repeat;
+    background-size: 30%;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    transition: all 0.4s;
+}
+
+.hole.up .mole {
+    top: 0;
+}
+
+.h1{
+    position: inherit;
+    position: center;
+    color: lime;
+    top:2rem;
+    font-size: 10px;
+}

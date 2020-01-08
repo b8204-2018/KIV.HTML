@@ -1,49 +1,91 @@
-body {
-    background-color:#000000;
-}
-a{text-decoration: none}
-ul{
-    margin:0;
+*{
+    margin: 0;
     padding: 0;
-    list-style: none;
 }
-/* menu main*/
-.side{
-    opacity: 0;
-    display: none;
-    left: -999em;
-    width: 200px;
+body{
+    background: black;
+    font-size: 16px;
+    font-family: sans-serif,arial;
 }
-.menu a{
-    background: #ff9900;
-    color: #fff;
-    padding: 10px;
+
+.nav{
+    width: 1100px;
+    height: 60px;
+    margin: 0 auto;
+    border-radius: 5px;
+
+}
+.menu{
     display: block;
-    transform: skew(20deg);
-    border-bottom: 1px solid #666;
-    transition: 0.4s all;
-}
-.menu a:hover{
-    background:gray;
-    padding: 10px 0 10px 30px;
-}
-/*menu float*/
-.menu_list{
+    width: 100%;
+    height: 60px;
+    background-image: linear-gradient(black,cyan);
+    visibility: hidden}
+.github{
+    text-decoration: none;
+    color: white;
+    width: 200px;
+    line-height: 60px;
     position: relative;
+    box-shadow: 0px 2px 5px 0px grey;
+    text-align: center;
+    float: right;
+
+    background-image: linear-gradient(black,orange);
+    font-size: 20px;
+    font-weight: bold;
+
 }
-.menu_drop{
-    position: absolute;
-    width:100%;
-    left: 100%;
-    top: -9999em;
-    opacity: 0;
-    border-left: 4px solid transparent;
-    transition: 0.4s opacity;
+.github:hover{
+    font-weight: bold;
+    background-image: none;
+    background-color: darkorange;
+    border-bottom: 2px solid white;
+    font-size: 25px;
+    transition: font-size 200ms;
+}
+
+.menu_list{
+    list-style: none;
+    font-weight: bold;
+    width: 200px;
+    line-height: 60px;
+    position: relative;
+    box-shadow: 0px 2px 5px 0px grey;
+    text-align: center;
+    float: left;
+    background-image: linear-gradient(black,cyan);
+}
+.menu_list a{
+    color: #fff;
+    width: 200px;
+    height: 58px;
+    display: inline-block;
+    text-decoration: none;
 }
 .menu_list:hover .menu_drop{
-    top:0;
-    opacity: 1;
+    display: block;
+    background-color: transparent;
+
 }
+.menu_list a:hover{
+    font-weight: bold;
+    background-color: seagreen;
+    border-bottom: 2px solid yellow;
+    font-size: 20px;
+    transition: font-size 200ms;
+}
+.menu_drop{
+display: none;
+}
+.nav {
+    display: none;
+    width: 100%;
+    height: auto;
+}
+
+
+
 .start_button{
     position: absolute;
     background-color: orange;
@@ -60,13 +102,12 @@ ul{
     color: aliceblue;
     z-index: 100;
     font-size: 2.5em;
-    left:30px;
-    top:40px;
+    position: center;
     width:80%;
 }
 .start{
     position: absolute;
-    background-color: orange;
+    background-image: linear-gradient(red,yellow);
     width:170px;
     height:170px;
     left: 50%;
@@ -79,28 +120,26 @@ ul{
 }
 .initialize{
     background-color: cyan;
-    transform: scale(0);
-    transition: transform 200ms linear;
+    border: 100px;
+    transform: scale(0) translateY(1000px);
+    transition: transform 500ms linear;
+
     will-change: transform;
 
 }
 .paint{
     opacity:0;
-    background-image: url("/sources/790278-download-free-hex-grid-wallpaper-1920x1080.jpg");
+    background-image: url("/sorces/790278-download-free-hex-grid-wallpaper-1920x1080.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
     opacity: 1;
     transition: 400ms opacity;
 }
 
 .enable{
     visibility: visible;
-    display: block;
     opacity: 1;
     transition: opacity 2s;
-}
-
-.menu{
-    font-size:1.5em;
-
 }
 
 

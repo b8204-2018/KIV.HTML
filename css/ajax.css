@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 16px;
+    font-family: sans-serif,arial;
+    background-image: url("/sorces/vladivostok.jpeg");
+
+}
+
+.navigation_bar{
+    display: block;
+    width: 100%;
+    height: 60px;
+    background-color: #00529b;
+}
+.push{list-style: none;
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+    width: 200px;
+    height: 60px;
+    margin-left: 2px;
+    border-color: transparent;
+    position: relative;
+    box-shadow: 0px 2px 5px 0px grey;
+    text-align: center;
+    float: left;
+}
+
+#btn_1{
+    background-color: #00529b;
+}
+
+#btn_2{
+    background-color: lightseagreen;
+}
+
+#btn_3{
+    background-color: orange;
+}
+
+#btn_4{
+    background-color: purple;
+}
+
+#btn_5{
+    background-color: yellowgreen;
+}
+.push:hover{
+    font-weight: bold;
+    background-color: red;
+    border-bottom: 2px solid blue;
+    font-size: 20px;
+    transition: font-size 200ms;
+}
+
+.text_block
+{
+    border-radius: 10px;
+    margin-top:50px;
+    margin-left:80px;
+    width:90%;
+    min-height: 500px;
+    background: white;
+}
+
+#title{
+    font-weight: bold;
+    font-size: 30px;
+    background: lightseagreen;
+}
+
+.script{
+    margin-top: 10px;
+    font-size: 16px;
+}
